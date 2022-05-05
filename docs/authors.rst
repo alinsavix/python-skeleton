@@ -1,2 +1,10 @@
-.. _authors:
-.. include:: ../AUTHORS.rst
+============
+Contributors
+============
+
+* TDV Alinsa <alinsa-github@lupine.org>
+
+..
+    _authors:
+..
+    include:: ../AUTHORS.rst

@@ -1,8 +1,8 @@
-==
-pc
-==
+=======
+pkgname
+=======
 
-This is the documentation of **pc**.
+This is the documentation of **pkgname**.
 
 .. note::
 

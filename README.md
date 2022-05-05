@@ -1,32 +1,32 @@
 .. These are examples of badges you could add:
 
 ```
-    .. image:: https://api.cirrus-ci.com/github/<USER>/pc.svg?branch=main
+    .. image:: https://api.cirrus-ci.com/github/<USER>/pkgname.svg?branch=main
         :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/pc
-    .. image:: https://readthedocs.org/projects/pc/badge/?version=latest
+        :target: https://cirrus-ci.com/github/<USER>/pkgname
+    .. image:: https://readthedocs.org/projects/pkgname/badge/?version=latest
         :alt: ReadTheDocs
-        :target: https://pc.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/pc/main.svg
+        :target: https://pkgname.readthedocs.io/en/stable/
+    .. image:: https://img.shields.io/coveralls/github/<USER>/pkgname/main.svg
         :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/pc
-    .. image:: https://img.shields.io/pypi/v/pc.svg
+        :target: https://coveralls.io/r/<USER>/pkgname
+    .. image:: https://img.shields.io/pypi/v/pkgname.svg
         :alt: PyPI-Server
-        :target: https://pypi.org/project/pc/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/pc.svg
+        :target: https://pypi.org/project/pkgname/
+    .. image:: https://img.shields.io/conda/vn/conda-forge/pkgname.svg
         :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/pc
-    .. image:: https://pepy.tech/badge/pc/month
+        :target: https://anaconda.org/conda-forge/pkgname
+    .. image:: https://pepy.tech/badge/pkgname/month
         :alt: Monthly Downloads
-        :target: https://pepy.tech/project/pc
+        :target: https://pepy.tech/project/pkgname
     .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
         :alt: Twitter
-        :target: https://twitter.com/pc
+        :target: https://twitter.com/alinsa
 ```
 
-# pc
+# pkgname
 
-fetch various information about a puppet catalog
+a short description of pkgname
 
 A longer description of your project goes here...
 
@@ -36,7 +36,7 @@ This project uses `pre-commit`, please make sure to install it before making any
 
 ```bash
     pip install pre-commit
-    cd pc
+    cd pkgname
     pre-commit install
 ```
 
