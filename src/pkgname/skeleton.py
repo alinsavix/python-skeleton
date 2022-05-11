@@ -27,9 +27,10 @@ from typing import List, NoReturn
 
 from pkgname import __version__
 
-__author__ = "TDV Alinsa"
-__copyright__ = "TDV Alinsa"
-__license__ = "GPLv3"
+#
+# __author__ = "TDV Alinsa"
+# __copyright__ = "TDV Alinsa"
+# __license__ = "GPLv3"
 
 _logger = logging.getLogger(__name__)
 
@@ -63,7 +64,7 @@ def fib(n: int) -> int:
 # executable/script.
 
 
-def parse_args(args: List[str]) -> argparse.Namespace:
+def _parse_args(args: List[str]) -> argparse.Namespace:
     """Parse command line parameters
 
     Args:
@@ -99,7 +100,7 @@ def parse_args(args: List[str]) -> argparse.Namespace:
     return parser.parse_args(args)
 
 
-def setup_logging(loglevel: int) -> None:
+def _setup_logging(loglevel: int) -> None:
     """Setup basic logging
 
     Args:
@@ -121,8 +122,8 @@ def main(args: List[str]) -> int:
       args (List[str]): command line parameters as list of strings
           (for example  ``["--verbose", "42"]``).
     """
-    parsed_args = parse_args(args)
-    setup_logging(parsed_args.loglevel)
+    parsed_args = _parse_args(args)
+    _setup_logging(parsed_args.loglevel)
     _logger.debug("Starting crazy calculations...")
     print("The {}-th Fibonacci number is {}".format(parsed_args.n, fib(parsed_args.n)))
     _logger.info("Script ends here")

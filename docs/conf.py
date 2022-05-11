@@ -11,6 +11,9 @@ import os
 import sys
 import shutil
 
+# from sphinx_pyproject import SphinxConfig
+# config = SphinxConfig("../pyproject.toml", globalns=globals())
+
 # -- Path setup --------------------------------------------------------------
 
 __location__ = os.path.dirname(__file__)
@@ -99,10 +102,8 @@ copyright = f"{td.year}, TDV Alinsa"
 # release: The full version, including alpha/beta/rc tags.
 # If you don’t need the separation provided between version and release,
 # just set them both to the same value.
-try:
-    from pkgname import __version__ as version
-except ImportError:
-    version = ""
+#
+from pkgname import __version__ as version
 
 if not version or version.lower() == "unknown":
     version = os.getenv("READTHEDOCS_VERSION", "unknown")  # automatically set by RTD
@@ -131,7 +132,7 @@ add_function_parentheses = True
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
-# add_module_names = True
+add_module_names = False
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
@@ -154,7 +155,8 @@ todo_emit_warnings = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "python_docs_theme"
+# html_theme = "python_docs_theme"
+html_theme = "sphinx_rtd_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -230,7 +232,7 @@ html_show_copyright = True
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "pkgname-doc"
+htmlhelp_basename = f"{project}-doc"
 
 
 # -- Options for LaTeX output ------------------------------------------------

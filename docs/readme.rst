@@ -1,29 +1,31 @@
-.. These are examples of badges you might want to add to your README:
-   please update the URLs accordingly
+..
+    .. These are examples of badges you might want to add to your README:
+    please update the URLs accordingly
 
-    .. image:: https://api.cirrus-ci.com/github/<USER>/zot.svg?branch=main
+    .. image:: https://api.cirrus-ci.com/github/<USER>/pkgname.svg?branch=main
         :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/zot
-    .. image:: https://readthedocs.org/projects/zot/badge/?version=latest
+        :target: https://cirrus-ci.com/github/<USER>/pkgname
+    .. image:: https://readthedocs.org/projects/pkgname/badge/?version=latest
         :alt: ReadTheDocs
-        :target: https://zot.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/coveralls/github/<USER>/zot/main.svg
+        :target: https://pkgname.readthedocs.io/en/stable/
+    .. image:: https://img.shields.io/coveralls/github/<USER>/pkgname/main.svg
         :alt: Coveralls
-        :target: https://coveralls.io/r/<USER>/zot
-    .. image:: https://img.shields.io/pypi/v/zot.svg
+        :target: https://coveralls.io/r/<USER>/pkgname
+    .. image:: https://img.shields.io/pypi/v/pkgname.svg
         :alt: PyPI-Server
-        :target: https://pypi.org/project/zot/
-    .. image:: https://img.shields.io/conda/vn/conda-forge/zot.svg
+        :target: https://pypi.org/project/pkgname/
+    .. image:: https://img.shields.io/conda/vn/conda-forge/pkgname.svg
         :alt: Conda-Forge
-        :target: https://anaconda.org/conda-forge/zot
-    .. image:: https://pepy.tech/badge/zot/month
+        :target: https://anaconda.org/conda-forge/pkgname
+    .. image:: https://pepy.tech/badge/pkgname/month
         :alt: Monthly Downloads
-        :target: https://pepy.tech/project/zot
+        :target: https://pepy.tech/project/pkgname
     .. image:: https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter
         :alt: Twitter
-        :target: https://twitter.com/zot
+        :target: https://twitter.com/pkgname
 
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
+..
+    .. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
     :target: https://pyscaffold.org/
 
