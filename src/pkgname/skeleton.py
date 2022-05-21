@@ -135,8 +135,40 @@ def run() -> NoReturn:
     """Calls :func:`main` passing the CLI arguments extracted from :obj:`sys.argv`
 
     This function can be used as entry point to create console scripts with setuptools.
+
+    .. versionadded:: 2.0.0
+       meow meow meow
+    .. versionchanged:: 2.0.5
+       because why stay the same if we can be different
     """
     sys.exit(main(sys.argv[1:]))
+
+
+def oldfunction() -> None:
+    """
+    An example of an out of date function, mostly so we can see the sphinx
+    docstring here.
+
+    .. deprecated:: 2.0.5
+       Use the other function :func:`run`.
+    """
+    return None
+
+
+# also need to install the `deprecated` package
+# there's also `versionadded` and `versionchanged`
+#
+# most recent things should be first
+from deprecated.sphinx import deprecated
+
+
+@deprecated(
+    reason="""Use the other function :func:`run`.""",
+    version="2.0.5",
+)
+def oldfunction2() -> None:
+    """Another example of an out of date function"""
+    return None
 
 
 if __name__ == "__main__":
